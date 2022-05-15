@@ -1,0 +1,145 @@
+/* ==========FONTSNCOLORS=========== */
+
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400&display=swap");
+
+/* font-family: 'Karla', sans-serif; */
+
+/* color grey :#323A45 
+color light gray: #848484 */
+
+/* ==========GENERAL=========== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  padding: 20px;
+  color: black;
+}
+
+/* ==========HEADER=========== */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0px 60px 0px;
+}
+h1 {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+nav a {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 0px 0px 0px 30px;
+}
+nav a:last-of-type {
+  letter-spacing: 6px;
+}
+
+/* ==========MAIN=========== */
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  color: #323a45;
+}
+
+.product_container:first-child {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+img {
+  width: 100%;
+  transition-duration: 0.8s;
+}
+
+img:hover {
+  opacity: 40%;
+}
+
+.product_picture {
+  background-color: whitesmoke;
+}
+
+.captions {
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  font-size: 16px;
+}
+
+.company_name {
+  font-size: 14px;
+  color: #848484;
+}
+
+/* ==========FOOTER=========== */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer div {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+
+  color: black;
+}
+
+footer div:first-of-type {
+  width: 30%;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+footer p {
+  color: black;
+  font-size: 14px;
+  line-height: 2;
+  font-weight: 300;
+}
+strong {
+  font-weight: 500;
+}
+footer span {
+  font-weight: 700;
+}
+
+h2 {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+#copyright {
+  color: #848484;
+  margin-top: 60px;
+}
+
+.italic {
+  font-style: italic;
+}
